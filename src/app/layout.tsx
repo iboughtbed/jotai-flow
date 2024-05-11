@@ -3,7 +3,12 @@ import "~/styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata, Viewport } from "next";
 
+import { ThemeProvider } from "~/components/providers";
+import { TailwindIndicator } from "~/components/tailwind-indicator";
+import { Toaster as Sonner } from "~/components/ui/sonner";
 import { siteConfig } from "~/config/site";
+import { fontSans } from "~/lib/fonts";
+import { cn } from "~/lib/utils";
 
 export const metadata: Metadata = {
   title: {
@@ -63,7 +68,23 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body>{children}</body>
+        <body
+          className={cn(
+            "min-h-screen font-sans antialiased",
+            fontSans.variable,
+          )}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div vaul-drawer-wrapper="">{children}</div>
+            <TailwindIndicator />
+            <Sonner richColors />
+          </ThemeProvider>
+        </body>
       </html>
     </ClerkProvider>
   );

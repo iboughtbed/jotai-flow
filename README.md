@@ -1,29 +1,74 @@
-# Create T3 App
+# [Jotai Flow](https://jotai-flow.vercel.app)
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is an open source habit app build with everything new in Next.js 14. It is bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+<!-- [![Jotai Flow](./public/og.png)](https://jotai-flow.vercel.app/) -->
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+> **Warning**
+> This project is still in development and is not ready for production use.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Tech Stack
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Framework:** [Next.js](https://nextjs.org)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **User Management:** [Clerk](https://clerk.com)
+- **ORM:** [Drizzle ORM](https://orm.drizzle.team)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com)
+- **Content Management:** [Contentlayer](https://www.contentlayer.dev)
+- **File Uploads:** [uploadthing](https://uploadthing.com)
 
-## Learn More
+## Features to be implemented
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- [x] Authentication with **Clerk**
+- [x] ORM using **Drizzle ORM**
+- [x] Database on **Neon**
+- [ ] Validation with **Zod**
+- [ ] Dashboard with tasks, categories, and subcategories
+- [ ] File uploads with **uploadthing**
+- [ ] Blog using **MDX** and **Contentlayer**
+- [ ] User subscriptions
+- [ ] AI tools for tasks
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Running Locally
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+1. Clone the repository
 
-## How do I deploy this?
+   ```bash
+   git clone https://github.com/iboughtbed/jotai-flow.git
+   ```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+2. Install dependencies using pnpm
+
+   ```bash
+   pnpm install
+   ```
+
+3. Copy the `.env.example` to `.env` and update the variables.
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Start the development server
+
+   ```bash
+   pnpm run dev
+   ```
+
+5. Push the database schema
+
+   ```bash
+   pnpm run db:push
+   ```
+
+## Introduction
+
+A habit app
+
+## Contributing
+
+Contributions are welcome! Please open an issue if you have any questions or suggestions. Your contributions will be acknowledged. See the [contributing guide](./CONTRIBUTING.md) for more information.
+
+## License
+
+Licensed under the MIT License. Check the [LICENSE](./LICENSE.md) file for details.

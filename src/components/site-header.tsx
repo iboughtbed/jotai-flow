@@ -66,6 +66,7 @@ export function SiteHeader({ user }: SiteHeaderProps) {
           >
             Github
           </Link>
+
           {user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

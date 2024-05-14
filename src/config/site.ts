@@ -5,8 +5,8 @@ const links = {
 };
 
 export const siteConfig = {
-  name: "NIS Insights",
-  url: "",
+  name: "Jotai Flow",
+  url: "http://localhost:3000", 
   ogImage: "",
   description: "A habit app",
   links,

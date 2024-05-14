@@ -7,6 +7,9 @@ This is an open source habit app build with everything new in Next.js 14. It is 
 > **Warning**
 > This project is still in development and is not ready for production use.
 
+> **Name**
+> Jotai means state in Japanese, and Jotai Flow means "State Flow"
+
 ## Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org)
